@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-The Renewable energy usage is increasing with a very high pace.There are numerous forums that talk about the Renewable enrgy. one of the places the people talk about Renewable Energy is Reddit. but there are both Renewable Energy and None-Renewable Energy subreddits.My goal is to use natural language processing and supervised learning to predict whether an article is from r/renewable  or from r/energy by the title and comments.
+The Renewable energy usage is increasing with a very high pace.There are numerous forums that talk about the Renewable enrgies. one of the places the people talk about Renewable Energies is Reddit. but there are both Renewable Energy and None-Renewable Energy subreddits.My goal is to use natural language processing and supervised learning to predict whether an article is from r/renewable  or from r/energy looking at the title and comments.
 
 
 ## Project Description
@@ -50,17 +50,17 @@ I got cross-validation and accuracy scores for Logistic Regression (using GridSe
 |**actual positive**|1267|2609|
 
 ## Conclusions
-This model was able to predict with 66% accuracy whether an article was from r/renewable or r/energy by sumbmissions and comments.Some misclassifications could result from a title containing a word the model associates with the other subreddit. the two subreddits are very similar and this is the reason for small accuracy.
+This model was able to predict with 66% accuracy whether an article was from r/renewable or r/energy looking at sumbmissions and comments.Some misclassifications could result from a title containing a word the model associates with the other subreddit. the two subreddits are very similar and this is the reason for small accuracy.
 
 The words that were more likely to be from text in r/renewable energy were hawaii , career, wind, solar, turbine and uk. The words that were more likely to be from text in r/energy were oil, hydrogen, market, shale, saudi, price anad opec .
 
-TFID performed better than count vectorizer in identifying most popular words in each subreddit. since TFIDF keeps the words that are rare in some texts and penalize the words that are very common in texts.
+TFIDF performed better than count vectorizer in identifying most popular words in each subreddit. since TFIDF keeps the words that are rare in some texts and penalize the words that are very common in texts.
 
 Next steps:
 
 - Take a deeper dive into understanding the misclassified text.
 - Try filtering out submissions that were removed from the subreddits.
-- Try other supervised moels
+- Try other supervised models
 - make our own list of stop words
 
 
